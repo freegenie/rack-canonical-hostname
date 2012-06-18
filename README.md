@@ -12,7 +12,7 @@ Redirect preserves path and querystring.
 
 Add this line to your application's Gemfile:
 
-    gem 'rack-canonical-host', :require => 'rack/canonical_host'
+    gem 'rack-canonical-hostname', :require => 'rack/canonical_host'
 
 And then execute:
 
@@ -20,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install rack-canonical-host
+    $ gem install rack-canonical-hostname
 
 ## Usage
 
