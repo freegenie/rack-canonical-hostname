@@ -36,7 +36,7 @@ Example for rails configuration:
   config.middleware.insert_before Rack::Lock, Rack::CanonicalHost, {
     :host   => 'my-site.com',
     :scheme => 'https',
-    :ignore => ['staging.my-site.com', 'balabik-staging.herokuapp.com']
+    :ignore => ['staging.my-site.com', 'my-site-staging.herokuapp.com']
   }
 ```
 
