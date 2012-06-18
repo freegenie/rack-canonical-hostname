@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/rack-canonical-host/version', __FILE__)
+require File.expand_path('../lib/rack/canonical_host', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Fabrizio Regini"]
@@ -11,7 +11,7 @@ Gem::Specification.new do |gem|
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-  gem.name          = "rack-canonical-host"
+  gem.name          = "rack-canonical-hostname"
   gem.require_paths = ["lib"]
   gem.version       = Rack::CanonicalHost::VERSION
   gem.add_development_dependency 'rspec', '~> 2.0'
