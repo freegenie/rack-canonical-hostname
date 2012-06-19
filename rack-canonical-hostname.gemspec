@@ -2,8 +2,8 @@
 require File.expand_path('../lib/rack/canonical_host', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["Fabrizio Regini"]
-  gem.email         = ["freegenie@gmail.com"]
+  gem.authors       = ["Fabrizio Regini", "Daniel Vartanov"]
+  gem.email         = ["freegenie@gmail.com", "dan@vartanov.net"]
   gem.description   = %q{Handle redirect to canonical host}
   gem.summary       = %q{Rack module to redirect to one canonical host and redirect when hitting the app with any other name}
   gem.homepage      = ""

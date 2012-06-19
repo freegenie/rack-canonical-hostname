@@ -1,6 +1,6 @@
 module Rack
   class CanonicalHost 
-    VERSION = 0.1 
+    VERSION = 0.2
 
     def initialize(app, options = {}) 
       @app    = app
