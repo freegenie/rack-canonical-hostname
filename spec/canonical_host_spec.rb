@@ -33,7 +33,7 @@ describe Rack::CanonicalHost do
       response = Rack::MockRequest.new(app)
         .get('/', {
           'HTTP_HOST' => 'foo.example.org',
-          'REQUEST_PATH' => '/login'
+          'PATH_INFO' => '/login'
         })
 
       response.headers['Location'].should =~ /\/login/ 
@@ -43,7 +43,7 @@ describe Rack::CanonicalHost do
       response = Rack::MockRequest.new(app)
         .get('/', {
           'HTTP_HOST' => 'foo.example.org',
-          'REQUEST_PATH' => '/login', 
+          'PATH_INFO' => '/login', 
           'QUERY_STRING' => 'a=10&b=20'
         })
 
